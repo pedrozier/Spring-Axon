@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>br.com.standard</groupId>
 	<artifactId>spring-data-sample</artifactId>
-	<version>0.1.0</version>
-	<name>spring-data-sample</name>
-	<description>Demo project for Spring Boot</description>
+	<version>0.3.0</version>
+	<name>spring-DDD</name>
+	<description></description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
