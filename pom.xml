@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>br.com.standard</groupId>
 	<artifactId>spring-data-sample</artifactId>
-	<version>0.6.0</version>
+	<version>0.7.0</version>
 	<name>spring-DDD-axon</name>
 	<description></description>
 	<properties>
