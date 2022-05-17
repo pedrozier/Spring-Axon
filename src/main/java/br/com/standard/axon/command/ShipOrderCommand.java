@@ -15,4 +15,5 @@ public class ShipOrderCommand {
 
     @TargetAggregateIdentifier
     private final String orderID;
+
 }
