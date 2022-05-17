@@ -38,6 +38,7 @@ public class OrderRestEndpoint {
         return commandGateway.send(new CreateOrderCommand(orderID, "teste"))
                 .thenCompose(result -> commandGateway.send(new ConfirmOrderCommand(orderID)))
                 .thenCompose(result -> commandGateway.send(new ShipOrderCommand(orderID)));
+
     }
 
     @GetMapping("/all-orders")

@@ -27,15 +27,19 @@ public class OrdersEventHandler {
     }
 
     @EventHandler
-    public void on(OrderConfirmedEvent event) { // revisar depois //
+    public void on(OrderConfirmedEvent event) {
         String orderID = event.getOrderID();
-        orders.put(orderID, new Order(orderID, event.getOrderID()));
+        Order order = orders.get(orderID);
+        order.setOrderConfirmed();
+        orders.put(orderID, order);
     }
 
     @EventHandler
-    public void on(OrderShippedEvent event) { // revisar depois //
+    public void on(OrderShippedEvent event) {
         String orderID = event.getOrderID();
-        orders.put(orderID, new Order(orderID, event.getOrderID()));
+        Order order = orders.get(orderID);
+        order.setOrderShipped();
+        orders.put(orderID, order);
     }
 
     @QueryHandler
